@@ -1,1 +1,1 @@
-# exsitek-test
+Install folder dist in chrome

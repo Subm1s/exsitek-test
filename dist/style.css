@@ -1,0 +1,13 @@
+.buttonVariant {
+  margin-right: 10px;
+  background-color: rgba(176, 228, 44, 0.482);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttonWrapper {
+  position: absolute;
+  background-color: red;
+  width: auto;
+  height: auto;
+}
