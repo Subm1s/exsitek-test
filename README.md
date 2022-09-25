@@ -1,1 +1,1 @@
-Install folder dist in chrome
+Set the "dist" folder in Google Chrome extension
