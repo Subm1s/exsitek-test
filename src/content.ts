@@ -39,7 +39,7 @@ const changeWords = {
   removePopup: function () {
     let btnWrapper = document.querySelector(".buttonWrapper");
     if (btnWrapper) {
-      return btnWrapper.remove();
+      btnWrapper.remove();
     }
   },
   replaceWord: function (btnValue: HTMLButtonElement) {
@@ -58,6 +58,10 @@ const changeWords = {
         .concat(eventButton.key);
     }
     replaceElement.focus();
+    this.removePopup();
+  },
+  replaceSelectWord: function () {
+
   },
 };
 
@@ -102,6 +106,14 @@ for (const element of fieldArr) {
   element.addEventListener("keydown", (e: KeyboardEvent) => {
     if (e.code === "Backspace") {
       changeWords.removePopup();
+    }
+  });
+  element.addEventListener("mouseup", (e) => {
+    let select = window.getSelection();
+    let selectText = select.toString();
+    if (selectText.trim() !== "") {
+      let rang = select.getRangeAt(0);
+      console
     }
   });
 }

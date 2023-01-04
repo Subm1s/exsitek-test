@@ -3,6 +3,7 @@ declare const changeWords: {
     createPopup: (variantList: string[]) => void;
     removePopup: () => void;
     replaceWord: (btnValue: HTMLButtonElement) => void;
+    replaceSelectWord: () => void;
 };
 declare let replaceElement: HTMLElement;
 declare let eventButton: KeyboardEvent;
